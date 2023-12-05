@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            background-image: linear-gradient(to bottom,white,rgb(173, 142, 142));
+            height: 1500px;
+            width: 100%;
+        }
+        .header1{
+            height: 45px;
+            width: 50%;
+            background-color: aliceblue;
+            border: 2px solid black;
+            margin-top: 50px;
+            border-radius: 10px;
+            margin-left: -3%;
+            float: left;
+            /* position: fixed; */
+            box-shadow: 5px 5px 3px rgb(147, 155, 147);
+        }
+        .shikayat{
+            margin-left: 15px;
+            font-size: 18px;
+            /* text-decoration: underline; */
+            color: rgb(136, 3, 3);
+            padding-top: 8px;
+        }
+        .header2{
+            height: 35px;
+            width:52% ;
+            background-image:linear-gradient(to bottom,brown,white,brown) ;
+            margin-top: 57px;
+            float: left;
+            box-shadow: 5px 5px 3px rgb(147, 155, 147);
+        }
+        .com-code{
+            height: 30px;
+            /* text-align: center; */
+            width:60% ;
+            border-radius: 8px;
+            margin-left: 20%;
+            margin-top: 70%;
+            padding-left: 10px;
+        }
+        .emp-id{
+            height: 70px;
+            /* text-align: center; */
+            width:60% ;
+            border-radius: 8px;
+            margin-left: 20%;
+            margin-top: 10%;
+            padding-left: 10px;
+        }
+        .pass-no{
+            height: 70px;
+            /* text-align: center; */
+            width:60% ;
+            border-radius: 8px;
+            margin-left: 20%;
+            margin-top: 10%;
+            padding-left: 10px;
+        }
+        .btn-background{
+            height: 50px;
+            background-image: linear-gradient(to bottom,brown,white,brown);
+            width: 62%;
+            margin-left: 20%;
+            margin-top: 20%;
+            border-radius: 5px;
+            
+        }
+        .btn{
+            height: 40px;
+            width: 40%;
+            border-radius: 10px;
+            margin-top: 5px;
+            margin-left: 30%;
+            /* font: 40px; */
+        }
+        .language{
+            width: 40%;
+            height: 25px;
+            background-color: white;
+            margin-top: 5px;
+            border-radius: 5px;
+            margin-left: 50%;
+        }
+        #language{
+            text-align: center;
+            margin-left: 50%;
+            margin-top: 8px;
+        }
+        .p1{
+            font-size: 30px;
+        }
+        .line{
+            background-color: black;
+            height: 2px;
+            width: 190px;
+            margin-left: 8%;
+        }
+        .pline{
+            height: 2px;
+            width: 55%;
+            background-color:brown;
+            top: 105px;
+            left: 24%;
+            position: absolute;
+        }
+        .input{
+            position: relative;
+        }
+        .p10{
+            position: absolute;
+            top: 55px;
+            left: 95px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header1">
+            <p class="shikayat">
+                SHIKAYATBHEJO.COM
+            </p>
+            <div class="line"></div>
+        </div>
+        <div class="header2">
+                <select name="language" id="language">
+                    <option value="h">language</option>
+                    <option value="h">English</option>
+                    <option value="h">Hindi</option>
+                    <option value="h">Tamil</option>
+                    <option value="h">Telgue</option>
+                </select>
+        </div>
+        <input type="text" class="com-code" placeholder="Company code"><br>
+        <div class="input">
+            <input type="text" class="emp-id" ><br>
+            <div class="pline"></div>
+            <p class="p10">EMPLOYEE ID</p>
+        </div>
+        <div class="input">
+            <input type="text" class="pass-no" ><br> 
+            <div class="pline"></div>
+            <p class="p10">PASSPORT NUMBER</p>
+        </div>
+        <div class="btn-background"><button class="btn"><p class="p1">NEXT</p></button></div>
+    </div>
+</body>
+</html>
