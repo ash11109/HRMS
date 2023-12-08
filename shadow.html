@@ -1,83 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        .main{
-            background-image: linear-gradient(to bottom,white,rgb(173, 142, 142));
-            height: 1500px;
+
+        .main {
+            background-image: linear-gradient(to bottom, white, rgb(247, 181, 181));
+            height: 100vh;
+            width: 100vw;
+        }
+        .header{
             width: 100%;
+            height: 170px;
+            background-color:transparent;
+            position: relative;
         }
         .header1{
-            height: 45px;
-            width: 50%;
-            background-color: aliceblue;
+            width: 55%;
+            background-color:aliceblue;
+            height: 50px;
+            border-radius: 15px;
+            position:absolute ;
+            top: 40px;
+            left: -15px;
             border: 2px solid black;
-            margin-top: 50px;
-            border-radius: 10px;
-            margin-left: -3%;
-            float: left;
-            /* position: fixed; */
-            box-shadow: 5px 5px 3px rgb(147, 155, 147);
+            box-shadow: 0px 5px 3px rgb(161, 142, 142);
         }
         .shikayat{
-            margin-left: 15px;
-            font-size: 18px;
-            /* text-decoration: underline; */
-            color: rgb(136, 3, 3);
-            padding-top: 8px;
+            padding-left: 25px;
+            margin-top: 15px;
         }
         .header2{
-            height: 35px;
-            width:52% ;
-            background-image:linear-gradient(to bottom,brown,white,brown) ;
-            margin-top: 57px;
-            float: left;
-            box-shadow: 5px 5px 3px rgb(147, 155, 147);
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            background-image:linear-gradient(to bottom,brown,white,brown);
+            top: 50px;
+            box-shadow: 0px 5px 3px rgb(161, 142, 142);
         }
-        .com-code{
+        .com-code {
             height: 30px;
             /* text-align: center; */
-            width:60% ;
+            width: 60%;
             border-radius: 8px;
             margin-left: 20%;
-            margin-top: 70%;
-            padding-left: 10px;
+            margin-top: 50%;
         }
-        .emp-id{
-            height: 70px;
+
+        .emp-id {
+            height: 30px;
             /* text-align: center; */
-            width:60% ;
-            border-radius: 8px;
-            margin-left: 20%;
-            margin-top: 10%;
-            padding-left: 10px;
+            width: 80%;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid black;
+            margin-left: 10%;
         }
-        .pass-no{
-            height: 70px;
-            /* text-align: center; */
-            width:60% ;
-            border-radius: 8px;
-            margin-left: 20%;
-            margin-top: 10%;
-            padding-left: 10px;
+
+        .pass-no {
+            height: 30px;
+            width: 80%;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid black;
+            margin-left: 10%;
         }
-        .btn-background{
+
+        .btn-background {
             height: 50px;
-            background-image: linear-gradient(to bottom,brown,white,brown);
+            background-image: linear-gradient(to bottom, brown, white, brown);
             width: 62%;
             margin-left: 20%;
             margin-top: 20%;
             border-radius: 5px;
-            
+
         }
-        .btn{
+
+        .btn {
             height: 40px;
             width: 40%;
             border-radius: 10px;
@@ -85,56 +93,62 @@
             margin-left: 30%;
             /* font: 40px; */
         }
-        .language{
+
+        .language {
             width: 40%;
             height: 25px;
             background-color: white;
-            margin-top: 5px;
             border-radius: 5px;
-            margin-left: 50%;
+            margin-left: 80%;
         }
-        #language{
+
+        #language {
             text-align: center;
-            margin-left: 50%;
-            margin-top: 8px;
+            margin-left: 70%;
+            margin-top: 5px;
         }
-        .p1{
+
+        .p1 {
             font-size: 30px;
         }
-        .line{
+
+        .line {
             background-color: black;
             height: 2px;
-            width: 190px;
-            margin-left: 8%;
+            width: 175px;
+            margin-left: 22.5px;
         }
-        .pline{
+        .pline {
             height: 2px;
             width: 55%;
-            background-color:brown;
-            top: 105px;
-            left: 24%;
+            background-color: brown;
+            top: 90%;
+            left: 23.5%;
             position: absolute;
         }
-        .input{
-            position: relative;
+
+        .input {
+            display: flex;
+            flex-direction:column ;
+            /* background-color: rgb(180, 229, 19); */
+            background-color: white;
+            border: 2px solid black;
+            width: 60%;
+            border-radius: 15px;
+            margin-left: 20%;
+            margin-top: 50px;
         }
-        .p10{
-            position: absolute;
-            top: 55px;
-            left: 95px;
-            font-size: 13px;
+
+        .p10 {
+            margin-left: 10%;
         }
     </style>
 </head>
+
 <body>
     <div class="main">
-        <div class="header1">
-            <p class="shikayat">
-                SHIKAYATBHEJO.COM
-            </p>
-            <div class="line"></div>
-        </div>
-        <div class="header2">
+        <div class="header">
+            <div class="header2">
                 <select name="language" id="language">
                     <option value="h">language</option>
                     <option value="h">English</option>
@@ -142,19 +156,27 @@
                     <option value="h">Tamil</option>
                     <option value="h">Telgue</option>
                 </select>
+            </div>
+            <div class="header1">
+                <p class="shikayat">
+                    SHIKAYATBHEJO.COM
+                </p>
+                <div class="line"></div>
+            </div>
         </div>
         <input type="text" class="com-code" placeholder="Company code"><br>
         <div class="input">
-            <input type="text" class="emp-id" ><br>
-            <div class="pline"></div>
             <p class="p10">EMPLOYEE ID</p>
+            <input type="text" class="emp-id"><br>
         </div>
         <div class="input">
-            <input type="text" class="pass-no" ><br> 
-            <div class="pline"></div>
             <p class="p10">PASSPORT NUMBER</p>
+            <input type="text" class="pass-no"><br>
         </div>
-        <div class="btn-background"><button class="btn"><p class="p1">NEXT</p></button></div>
+        <div class="btn-background"><button class="btn">
+                <p class="p1">NEXT</p>
+            </button></div>
     </div>
 </body>
+
 </html>
