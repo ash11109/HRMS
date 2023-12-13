@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRMS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
+
+     
+        
+
+        .header1 {
+            height: 45px;
+            width: 50%;
+            background-color: aliceblue;
+            border: 2px solid black;
+            margin-top: 50px;
+            border-radius: 10px;
+            margin-left: -3%;
+            float: left;
+            /* position: fixed; */
+        }
+
+        .shikayat {
+            margin-left: 15px;
+            font-size: 18px;
+            text-decoration: underline solid black;
+            color: rgb(136, 3, 3);
+            padding-top: 8px;
+        }
+
+        .header2 {
+            height: 35px;
+            width: 52%;
+            float: left;
+            background-image: linear-gradient(to bottom, brown, white, brown);
+            margin-top: 57px;
+            float: left;
+        }
+
+        .language {
+            width: 40%;
+            height: 25px;
+            background-color: white;
+            margin-top: 5px;
+            border-radius: 5px;
+            margin-left: 50%;
+        }
+
+        #language {
+            text-align: center;
+            margin-left: 105;
+            /* margin-top: 5px; */
+        }
+
+        .main {
+            width: 100%;
+            height: 930px;
+            /* background-image: linear-gradient(to top, rgb(171, 71, 71), white); */
+            overflow-x: hidden;
+        }
+
+        .form {
+            margin-left: -100px;
+
+        }
+
+        #name {
+            width: 60%;
+            height: 30px;
+        }
+
+        .p1 {
+            margin-top: 20px;
+            margin-left: -120px;
+            font-size: 40px;
+        }
+        .bk {
+            background-image: linear-gradient(to bottom, white, rgb(247, 181, 181));
+            width: 100%;
+            height: 100vh;
+            z-index: -999;
+            position: fixed;
+        }
+
+
+
+
+
+
+
+
+        input[type="text"] {
+            /* text-align: left; */
+            width: 100%;
+            padding: 18px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .line {
+            position: relative;
+        }
+
+        .line2 {
+            background-color: brown;
+            height: 2px;
+            width: 195px;
+            position: absolute;
+            top: 31px;
+            left: 4px;
+        }
+
+
+        .btn-background {
+            height: 50px;
+            width: 61%;
+            margin-left: 0%;
+            background-image: linear-gradient(to bottom, brown, white, brown);
+            ;
+            border-radius: 8px;
+
+        }
+
+        .btn {
+            height: 70%;
+            width: 80%;
+            border-radius: 8px;
+            margin: 8px 0 0 20px;
+        }
+
+        .p2 {
+            font-size: 30px;
+        }
+
+        .p3 {
+            position: absolute;
+            top: 3px;
+            left: 7px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bk">
+
+    </div>
+    <div class="main">
+        <div class="header1">
+            <p class="shikayat">
+                SHIKAYATBHEJO.COM
+            </p>
+        </div>
+        <div class="header2">
+            <div class="language">
+                <select name="language" id="language">
+                    <option value="h">language</option>
+                    <option value="h">English</option>
+                    <option value="h">Hindi</option>
+                    <option value="h">Tamil</option>
+                    <option value="h">Telgue</option>
+                </select>
+            </div>
+            <p class="p1">personal details</p>
+
+
+
+            <div class="form">
+
+
+                <div class="line"><input type="text" id="name">
+                    <p class="p3">name</p><br>
+                    <div class="line2"></div><br>
+                </div>
+                <div class="line"><input type="text" id="name"> <p class="p3">surname</p><br>
+                    <div class="line2"></div><br>
+                </div>
+                <div class="line"><input type="text" id="name"><p class="p3">Mobile number</p> <br>
+                    <div class="line2"></div><br>
+                </div>
+                <div class="line"><input type="text" id="name"><p class="p3">whatapp number</p><br>
+                    <div class="line2"></div><br>
+                </div>
+                <div class="line"><input type="text" id="name"><p class="p3">nominee number</p><br>
+                    <div class="line2"></div><br>
+                </div>
+                <div class="line"><input type="text" id="name"><p class="p3"> home address</p><br>
+                    <div class="line2"></div><br>
+                </div>
+                <div class="line"><input type="text" id="name"><p class="p3">distcit</p><br>
+                    <div class="line2"></div><br>
+
+                <div class="line"><input type="text" id="name"><p class="p3">state</p><br>
+                    <div class="line2"></div><br>
+                </div>
+                <div class="line"><input type="text" id="name"><p class="p3">country</p><br>
+                    <div class="line2"></div><br>
+                </div>
+                </form>
+
+            </div>
+
+            <div class="btn-background"><button class="btn">
+                    <p class="p2">login</p> 
+                </button></div>
+
+        </div>
+
+
+
+
+
+        <script src="assets/js/script.js"></script>
+</body>
+
+</html>
